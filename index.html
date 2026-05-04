@@ -35,7 +35,9 @@
         overflow-x: hidden;
         width: 100vw;
       }
-
+      #homeFeed > div {
+        margin-bottom: 70px !important;
+      }
       /* Navbar */
       .navbar {
         position: fixed;
@@ -254,7 +256,7 @@
       .main-wrapper {
         margin-top: var(--navbar-height);
         transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 16px;
+        padding: 24px; /* was 16px */
         max-width: 100%;
         overflow-x: hidden;
       }
@@ -268,7 +270,7 @@
       /* Hero Banner Styles */
       .hero-section {
         width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
         position: relative;
         overflow: hidden;
         border-radius: 12px;
@@ -374,7 +376,7 @@
         white-space: nowrap;
         padding: 10px 0;
         scrollbar-width: none;
-        margin-bottom: 12px;
+        margin-bottom: 20px; /* was 12px */
       }
       .chip {
         padding: 6px 12px;
@@ -392,8 +394,8 @@
       .video-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 16px;
-        margin-bottom: 24px;
+        gap: 20px; /* was 16px */
+        margin-bottom: 40px; /* was 24px */
       }
       .video-card {
         cursor: pointer;
@@ -478,9 +480,10 @@
       }
       .feed-divider {
         grid-column: 1 / -1;
-        margin: 32px 0 16px;
+        /* margin: 32px 0 16px; */
         border-top: 4px solid var(--secondary-bg);
-        padding-top: 24px;
+        margin: 48px 0 24px; /* was 32px 0 16px */
+        padding-top: 32px; /* was 24px */
       }
       .section-header {
         display: flex;
@@ -549,7 +552,10 @@
         object-fit: cover;
         border-radius: 8px;
       }
-
+      .post-card,
+      .ad-banner {
+        margin-bottom: 40px !important; /* was 24px */
+      }
       /* Sponsored Ad */
       .ad-banner {
         grid-column: 1 / -1;
